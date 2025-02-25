@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Official Website of WeiWei Store</title>
+
+    <!-- Tailwind CSS (CDN) -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+    <!-- Font Awesome (CDN) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        /* Custom styles to override Tailwind if needed */
+        .product-name {
+            background-color: rgba(255, 105, 180, 0.7); /* Hot Pink with transparency */
+        }
+    </style>
+</head>
+<body class="bg-pink-50"> <!-- Light pink background -->
+
+    <div class="container mx-auto py-8">
+        <h1 class="text-3xl font-semibold text-center text-pink-600 mb-4">Welcome to WeiWei Store</h1> <!-- Pink heading -->
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <div class="product-box bg-white rounded-lg shadow-md overflow-hidden relative cursor-pointer" data-product="product1">
+                <img src="https://i.pinimg.com/736x/22/a4/1a/22a41a9cfc7e8f90e57d92eb79d01c0f.jpg" alt="Product 1" class="w-full h-48 object-cover">
+                <div class="product-name absolute bottom-0 left-0 w-full text-white text-center py-2">Product 1</div>
+            </div>
+
+            <div class="product-box bg-white rounded-lg shadow-md overflow-hidden relative cursor-pointer" data-product="product2">
+                <img src="product2.jpg" alt="Product 2" class="w-full h-48 object-cover">
+                <div class="product-name absolute bottom-0 left-0 w-full text-white text-center py-2">Product 2</div>
+            </div>
+
+            <div class="product-box bg-white rounded-lg shadow-md overflow-hidden relative cursor-pointer" data-product="product3">
+                <img src="product3.jpg" alt="Product 3" class="w-full h-48 object-cover">
+                <div class="product-name absolute bottom-0 left-0 w-full text-white text-center py-2">Product 3</div>
+            </div>
+
+            <!-- Add more product boxes as needed -->
+        </div>
+
+        <div class="price-table-container mt-8 bg-white rounded-lg shadow-md p-4 hidden" id="product1-table">
+            <h2 class="text-2xl font-semibold mb-4 text-pink-500">Product 1 Price List</h2> <!-- Pink heading -->
+            <table class="table-auto w-full">
+                <thead>
+                    <tr class="bg-pink-100"> <!-- Light pink header -->
+                        <th class="px-4 py-2">Item</th>
+                        <th class="px-4 py-2">Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="border px-4 py-2">Basic</td>
+                        <td class="border px-4 py-2">$10</td>
+                    </tr>
+                    <tr>
+                        <td class="border px-4 py-2">Premium</td>
+                        <td class="border px-4 py-2">$20</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="price-table-container mt-8 bg-white rounded-lg shadow-md p-4 hidden" id="product2-table">
+            <h2 class="text-2xl font-semibold mb-4 text-pink-500">Product 2 Price List</h2> <!-- Pink heading -->
+            <table class="table-auto w-full">
+                <thead>
+                    <tr class="bg-pink-100"> <!-- Light pink header -->
+                        <th class="px-4 py-2">Item</th>
+                        <th class="px-4 py-2">Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="border px-4 py-2">Small</td>
+                        <td class="border px-4 py-2">$5</td>
+                    </tr>
+                    <tr>
+                        <td class="border px-4 py-2">Large</td>
+                        <td class="border px-4 py-2">$10</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="price-table-container mt-8 bg-white rounded-lg shadow-md p-4 hidden" id="product3-table">
+            <h2 class="text-2xl font-semibold mb-4 text-pink-500">Product 3 Price List</h2> <!-- Pink heading -->
+            <table class="table-auto w-full">
+                <thead>
+                    <tr class="bg-pink-100"> <!-- Light pink header -->
+                        <th class="px-4 py-2">Item</th>
+                        <th class="px-4 py-2">Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="border px-4 py-2">Option A</td>
+                        <td class="border px-4 py-2">$15</td>
+                    </tr>
+                    <tr>
+                        <td class="border px-4 py-2">Option B</td>
+                        <td class="border px-4 py-2">$25</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Social Links -->
+        <div class="social-links flex justify-center mt-8">
+            <a href="https://www.youtube.com/@gdizteam" target="_blank" rel="noopener noreferrer" class="text-pink-500 hover:text-pink-700 mr-4"><i class="fab fa-youtube fa-2x"></i></a>
+            <a href="https://twitter.com/gdizteam" target="_blank" rel="noopener noreferrer" class="text-pink-500 hover:text-pink-700 mr-4"><i class="fab fa-twitter fa-2x"></i></a>
+            <a href="https://www.instagram.com/gdizteam/" target="_blank" rel="noopener noreferrer" class="text-pink-500 hover:text-pink-700 mr-4"><i class="fab fa-instagram fa-2x"></i></a>
+            <a href="https://www.facebook.com/gdizteam/" target="_blank" rel="noopener noreferrer" class="text-pink-500 hover:text-pink-700"><i class="fab fa-facebook fa-2x"></i></a>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const productBoxes = document.querySelectorAll('.product-box');
+            const priceTableContainers = document.querySelectorAll('.price-table-container');
+
+            productBoxes.forEach(box => {
+                box.addEventListener('click', function() {
+                    // Hide all price tables
+                    priceTableContainers.forEach(table => {
+                        table.classList.add('hidden');
+                    });
+
+                    // Get the product identifier from the data attribute
+                    const product = this.dataset.product;
+
+                    // Show the corresponding price table
+                    const tableId = product + '-table';
+                    const tableToShow = document.getElementById(tableId);
+
+                    if (tableToShow) {
+                        tableToShow.classList.remove('hidden');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
